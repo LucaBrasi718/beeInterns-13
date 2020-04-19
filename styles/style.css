@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    font-family: "Arimo", -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4A4A4A;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.db {
+    display: block;
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.w50 {
+    width: 50%;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    background-color: #F6F9FF;
+}
+
+/* ===== SIDEBAR ===== */
+aside {
+    flex-basis: 255px;
+    flex-shrink: 0;
+}
+
+.sidebar {
+    padding: 19px 34px 10px 19px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.sidebar__list {
+    padding-top: 6px;
+    padding-right: 7px;
+}
+
+.list__item {
+    margin-top: 11px;
+}
+
+.item__image {
+    margin-top: 10px;
+    height: 164px;
+    background-color: #F6F9FF;
+    border-radius: 8px;
+}
+
+/* MAIN STYLES */
+main {
+    flex-grow: 1;
+}
+.content {
+    padding: 0 30px;
+}
+
+.section {
+    margin-bottom: 5px;
+    padding-top: 17px
+}
+
+.section__title {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.section__row {
+    display: flex;
+    margin-top: 21px;
+}
+
+.section__block {
+    min-height: 185px;
+    border-radius: 5px;
+    padding: 12px 14px;
+    font-weight: bold;
+    color: #A4A4A4;
+    background-color: #fff;
+    flex-grow: 1;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+
+.section__block:last-child {
+    margin-right: 0;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.section__block .block__inner {
+    background-color: #F6F9FF;
+    border-radius: 8px;
+}
+
+.section__block .block__right-block {
+    width: 20%;
+    height: 440px;
+    margin-left: 16px;
+}
+
+.block__inner .section__title {
+    margin-bottom: 7px;
+}
+
+.section__block .block__main-block {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__block .block__main-block .row {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.block__main-block ul {
+    margin-top: 15px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 158px;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+.block__main-block ul::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: url('../images/line.png') no-repeat;
+    height: 7px;
+    width: 100%;
+    background-size: cover;
+}
+
+.block__main-block li {
+    background-color: #EDF3FF;
+    flex-grow: 1;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.block__main-block li:first-child {
+    margin-left: 0;
+}
+
+.main-block__side {
+    flex-basis: 195px;
+    flex-grow: 0;
+}
+
+form .row {
+    margin-top: 20px;
+    padding-right: 40px;
+}
+
+form .form__item {
+    font-weight: normal;
+    max-width: 280px;
+}
+
+form label {
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+form label + label {
+    margin-top: 10px;
+}
+
+form label input {
+    display: none;
+}
+
+form label b {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #4A4A4A;
+    border-radius: 3px;
+    left: 0;
+    top: 1px;
+}
+
+form label input:checked+b {
+    background-color: #000;
+}
+
+form label span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+form .condition {
+    margin-top: 10px;
+    padding-left: 38px;
+}
+
+form .condition label {
+    margin-top: 6px;
+}

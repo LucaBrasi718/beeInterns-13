@@ -196,32 +196,32 @@ main {
     flex-grow: 0;
 }
 
-form .row {
+.form .row {
     margin-top: 20px;
     padding-right: 40px;
 }
 
-form .form__item {
+.form .form__item {
     font-weight: normal;
     max-width: 280px;
 }
 
-form label {
+.form label {
     display: block;
     padding-left: 20px;
     position: relative;
     cursor: pointer;
 }
 
-form label + label {
+.form label + label {
     margin-top: 10px;
 }
 
-form label input {
+.form label input {
     display: none;
 }
 
-form label b {
+.form label b {
     position: absolute;
     width: 12px;
     height: 12px;
@@ -231,21 +231,21 @@ form label b {
     top: 1px;
 }
 
-form label input:checked+b {
+.form label input:checked+b {
     background-color: #000;
 }
 
-form label span {
+.form label span {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
 }
 
-form .condition {
+.form .condition {
     margin-top: 10px;
     padding-left: 38px;
 }
 
-form .condition label {
+.form .condition label {
     margin-top: 6px;
 }
